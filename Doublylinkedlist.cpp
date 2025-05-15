@@ -121,5 +121,9 @@ private:
             if(current->next != NULL)
                 current->next->prev = current->prev;
         }
+
+        //step 5: Delete the node
+        delete current;
+        cout << "Record wiht roll number" << rollNo << " deleted" << endl;
     }
 };
