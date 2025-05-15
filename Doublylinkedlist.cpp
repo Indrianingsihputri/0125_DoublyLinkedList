@@ -112,5 +112,14 @@ private:
                 START->prev = NULL;//step 2b: START.prev = NULL
             }
         }
+        else
+        {
+            //step 3:link previous node to the next of current
+            current->prev->next = current->next;
+
+            //step 4: if currennt is not the last node
+            if(current->next != NULL)
+                current->next->prev = current->prev;
+        }
     }
 };
