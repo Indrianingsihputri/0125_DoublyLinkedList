@@ -7,4 +7,13 @@ public:
     int noMhs;
     Node *next;
     Node *prev;
+}
+
+class DoublyLinkedList {
+private:
+    DoublyLinkedList()
+    {
+        START = NULL;
+    }
+
 };
