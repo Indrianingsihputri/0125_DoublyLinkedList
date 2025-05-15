@@ -84,5 +84,10 @@ private:
             cout << "\nList is empty" << endl;
             return;
         }
+
+         cout << "\nMasukkan NIM yang akan dideleted " << endl;
+        int rollNo;
+        cin >> rollNo;
+        
     }
 };
