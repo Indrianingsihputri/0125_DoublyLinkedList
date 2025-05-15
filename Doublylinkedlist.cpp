@@ -16,4 +16,17 @@ private:
         START = NULL;
     }
 
+        void addNode()
+    {
+        int nim;
+        cout <<"\nEnter the roll number or the student: ";
+        cin >> nim;
+
+        //stap 1: Allocation of new node
+        Node *newNode = new Node();
+
+        //step 2: Assign valoe to the data fields
+        newNode->noMhs = nim;
+    }
+
 };
