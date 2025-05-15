@@ -36,7 +36,7 @@ private:
                 cout << "\nDuplicate number not allowed" << endl;
                 return;
             }
-            
+
              //step 4 newNode.next = START
             newNode->next = START;
 
@@ -50,6 +50,15 @@ private:
             //Step 7: START = newNode 
             START = newNode;
             return;
+        }
+
+        //insert in betweel node
+        //step 8: locate position for insertion
+        Node *current = START;
+        while ( current->next != NULL && current->nextnoMhs < nim)
+        {
+            current = current->next;
+
         }
     }
 
