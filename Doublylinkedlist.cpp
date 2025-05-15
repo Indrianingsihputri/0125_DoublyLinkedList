@@ -36,7 +36,20 @@ private:
                 cout << "\nDuplicate number not allowed" << endl;
                 return;
             }
+            
+             //step 4 newNode.next = START
+            newNode->next = START;
 
+            //step 5 START.PREV = newNode (if Start exists)
+            if (START != NULL)
+                START->prev = newNode;
+
+            //step 6: newNode.prev = NULL
+            newNode->prev = NULL;
+
+            //Step 7: START = newNode 
+            START = newNode;
+            return;
         }
     }
 
